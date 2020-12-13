@@ -1,0 +1,28 @@
+body {
+    background-color: red;
+    font-family: 'Poppins';
+}
+
+.flex-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.flex-list {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 750px;
+}
+
+img {
+    max-width: 200px;
+}
