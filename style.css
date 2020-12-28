@@ -1,28 +1,74 @@
 body {
-    background-color: red;
+    background-color: grad;
     font-family: 'Poppins';
+    padding-left: auto;
+    padding-right: auto;
+    ß
+
 }
 
+.about-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
 .flex-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    
+    max-width: 900px;
+    width: 625px;
+ 
 }
 
+
+
 h1 {
-    color: aliceblue;
+    color: black
     font-size: 60px;
+    font-weight: 700;
 }
 
 .flex-list {
-    color: aliceblue;
+    color: black;
     display: flex;
+    margin: auto;
     flex-direction: column;
-    align-items: stretch;
-    min-width: 750px;
+    max-width: 625px;
+    
+}
+
+.button {
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
 }
 
 img {
     max-width: 200px;
 }
+
+.fas-fa-camera{
+    color: black;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../webfonts/fa-brands-400.eot");
+    src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  
+  .fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; }
