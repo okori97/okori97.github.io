@@ -3,72 +3,78 @@ body {
     font-family: 'Poppins';
     padding-left: auto;
     padding-right: auto;
-    ß
 
 }
 
-.about-section {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+.page-wrapper {
+
+    padding-top: 40px;
 
 }
 
-.img-flex-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+/*  Navbar  */
 
-}
-.flex-wrapper {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: 900px;
-    width: 625px;
+.navbar {
+ max-width: 100%;
+ width: 900px;
+ margin-left: auto;
+ margin-right: auto;
+
  
 }
 
-
-
-h1 {
-    color: black
-    font-size: 60px;
-    font-weight: 700;
+.navbar-inner {
+height: 55px;
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px;
 }
 
-.flex-list {
-    color: black;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    max-width: 625px;
-    
+/*  Page content */
+
+.page-section {
+
+    max-width: 100%;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
 }
 
-.button {
-    padding: 10px;
-    background-color: white;
-    font-weight: bold;
+.page-inner {
+    width: 100%;
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-top: 1px solid rgba(0, 0, 0, 0.23);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+    height: 100vh;
 }
 
-img {
-    max-width: 200px;
+.page-inner-flex {
+display: flex;
 }
 
-.fas-fa-camera{
-    color: black;
+
+
+.page-inner-left {
+
+    width: 50%;
+    max-width: 100%;
 }
 
-@font-face {
-    font-family: 'Font Awesome 5 Brands';
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url("../webfonts/fa-brands-400.eot");
-    src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
-  
-  .fab {
-    font-family: 'Font Awesome 5 Brands';
-    font-weight: 400; }
+.page-inner-right {
+    width: 50%;
+    max-width: 100%;
+}
+
+
+    @media screen and (max-width:635px) {
+
+   
+
+    @media screen and (max-width:320px) {
+
+        
+    }
