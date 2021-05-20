@@ -23,18 +23,23 @@
             <div class="page-inner">
                 <div class="form-cont">
                     <form action="POST">
-                        <ul>
+                        <ul class="form-list">
+                         <div class="form-top">
                             <li class="form-input">
                                 <label for="name">name</label>
-                                <input type="text">
+                                <input type="text" class="form-text-feild">
                             </li>
                             <li class="form-input">
                                 <label for="email">email</label>
-                                <input type="email">
+                                <input type="email" class="form-text-feild">
                             </li>
-                            <li class="form-input">
+                        </div>
+                            <li class="form-input msg">
                                 <label for="message">message </label>
                                 <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+                            </li>
+                            <li class="form-submit-button">
+                                <input type="submit" value="Submit">
                             </li>
                         </ul>
                     </form>
