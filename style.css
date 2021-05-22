@@ -115,11 +115,11 @@ display: flex;
 
 .page-inner-hero-img-wrap {
     overflow: hidden;
-    height: 400px;
+    height: 600px;
     margin-bottom: 20px;
     background-image: url(images/IMG_2245.JPG);
     background-size: cover;
-    background-position: 0px 0px;
+    background-position: 0px -200px;
 }
 
 .page-inner-right {
@@ -237,7 +237,7 @@ input[type="email"] {
             background-position: 0px -200px;
         }
 
-    @media screen and (max-width:555px) {
+    @media screen and (max-width:845px) {
 
         .page-inner {
             height: auto;
@@ -249,5 +249,30 @@ input[type="email"] {
 
         .page-inner-hero-img-wrap {
             background-position: 0px 0px;
+        }
+
+        .contact-page-inner {
+            flex-direction: column-reverse;
+        }
+
+        .form-top {
+            flex-direction: column;
+        }
+
+        .form-input {
+            width: 100%;
+        }
+
+        .subtitle {
+            padding: 0px;
+            font-size: 1em;
+        }
+
+        .navbar-inner-right {
+            width: auto;
+        }
+        
+        .nav-links {
+            flex-direction: column;
         }
     }
