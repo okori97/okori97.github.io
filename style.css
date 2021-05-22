@@ -201,6 +201,7 @@ input[type="email"] {
  input[type="submit"] {
     padding: 15px 50px;
     font-weight: 600;
+    width: 100%;
     font-variant: normal;
     color: white;
     background-color: black;
