@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap" rel="stylesheet">
     <link href="Assets/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    
 </head>
 <body>
  
@@ -15,36 +16,41 @@
 
         <div class="navbar"> 
             <div class="navbar-inner">
-                <h1> Okori - Get in touch </h1>
+                <h1> Get in touch </h1>
             </div>
         </div>
         
         <div class="page-section">
-            <div class="page-inner">
+            <div class="contact-page-inner">
+                
                 <div class="form-cont">
-                    <form action="POST">
+                    <form action="POST" id="myForm">
                         <ul class="form-list">
                          <div class="form-top">
                             <li class="form-input">
-                                <label for="name">name</label>
-                                <input type="text" class="form-text-feild">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-text-feild">
                             </li>
                             <li class="form-input">
-                                <label for="email">email</label>
-                                <input type="email" class="form-text-feild">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-text-feild">
                             </li>
                         </div>
                             <li class="form-input msg">
-                                <label for="message">message </label>
+                                <label for="message">Message </label>
                                 <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
                             </li>
                             <li class="form-submit-button">
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Send Message">
                             </li>
                         </ul>
                     </form>
                 </div>
-                    
+
+                <button class="test-button"> click me </button>
+                <button class="alt-button"> clear all </button>
+
+
 
             </div>
 
@@ -53,6 +59,32 @@
 
 
     </div>
+
+    <script>
+       
+
+        
+        function popup() {
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var msg = document.getElementById("msg").value;
+            alert("name : " + name +  "\nemail : " + email + "\nmessage : " + msg);
+            
+        }
+        document.querySelector(".test-button").addEventListener("click", popup);
+
+    
+        function clearForm() {
+
+            document.getElementById("myForm").reset();
+            
+        }
+
+        document.querySelector(".alt-button").addEventListener("click", clearForm);
+
+    </script>
+
 
 </body>
 </html>
